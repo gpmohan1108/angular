@@ -1,0 +1,10 @@
+<h1>problem statement 6</h1>
+<div class="container">
+<ul *ngFor="let person of people"  >
+  <li [ngClass]="{
+  'text-danger':person.employee_age>50,
+  'text-primary':person.employee_age<50}">
+  {{ person.employee_name }} ({{ person.employee_age }})
+  </li>
+</ul>
+</div>

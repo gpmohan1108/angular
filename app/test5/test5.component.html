@@ -1,0 +1,24 @@
+ <h1>problem statement 9</h1>
+<div class="container">
+    <table class="table table-hover">
+
+      <thead>
+          <th>Name</th>  
+          <th>ID</th>
+          <th>USER-NAME</th>
+          <th>EMAIL</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let hero of users; let iseven=even; ">
+        
+            <td [ngClass]="{'bg-primary':iseven}">{{hero.name}}</td>
+            <td [ngClass]="{'bg-primary':iseven}">{{hero.id}}</td>
+            <td [ngClass]="{'bg-primary':iseven}">{{hero.username}}</td>
+            <td [ngClass]="{'bg-primary':iseven}">{{hero.email}}</td>
+      </tbody>
+    </table>
+    </div>  
+
+    
+
+             
